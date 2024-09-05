@@ -1,11 +1,11 @@
 [Desktop Entry]
-Version=1.0
+Type=Application
+Version=1.5
 Name=FreeMind
-GenericName=FreeMind
+GenericName=Mind mapper
+Comment=Hierarchical editor with strong emphasis on folding
+Icon=freemind
 Exec=freemind %U
 Terminal=false
-Icon=freemind
-Type=Application
 MimeType=application/x-freemind;
-Categories=Office;
-Comment=A free mind mapping tool
+Categories=Office;Java;

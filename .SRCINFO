@@ -1,18 +1,21 @@
-pkgbase = freemind
-	pkgdesc = A Java mindmapping tool
+pkgbase = freemind-bin
+	pkgdesc = A mind mapper, and a hierarchical editor with strong emphasis on folding
 	pkgver = 1.0.1
-	pkgrel = 5
-	url = https://sourceforge.net/projects/freemind
-	changelog = freemind.changelog
+	pkgrel = 1
+	url = https://freemind.sourceforge.io/wiki/
 	arch = any
-	license = GPL
+	license = GPL-2.0-or-later
 	makedepends = libicns
-	depends = hicolor-icon-theme
-	depends = java-runtime
-	depends = libxtst
+	depends = java-runtime<=11
+	provides = freemind
+	conflicts = freemind
+	replaces = freemind
+	noextract = freemind-bin-max-1.0.1.zip
 	source = https://downloads.sourceforge.net/freemind/freemind-bin-max-1.0.1.zip
+	source = freemind.svg::https://sourceforge.net/p/freemind/code/ci/master/tree/freemind/images/76812-freemind_v0.4.svg?format=raw
 	source = freemind.desktop
-	sha256sums = 005e815bf5d1867eadcaa89194df9952d986ace9eed0a3058c7ee6255799a60a
-	sha256sums = eac8db98257fcb8ed9c76ec340af5f3233a4783b8fe1c57ef274b9e7d2b56ed5
+	b2sums = 4e5b5f1ec41c48d00f70e246e67e66c0d606fba4d4f1cb5709957693d648446a2ee9ecd40d290dda627f65d25176eace5223abff405bcce7655d2604a4fc6e21
+	b2sums = 2399111a45e6c0a6e88bcb612d2dbdbb1deecd0b034986a79303fef65c7608e350f47bffd0b45de21b019a87c4ff69b8ed09eca586bcd8ac03610fd376355b7a
+	b2sums = c1aeebe028d59c6d3c0f0c7ef5f4353ef08d7f7103944305cc3166d65b9ff593fd7c4eeea7f28e43ad887308fa45c334c91b81f75fc1b4f43f5d8dacb610b0b7
 
-pkgname = freemind
+pkgname = freemind-bin
